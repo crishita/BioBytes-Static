@@ -2,118 +2,110 @@
 <html>
     
     <head>
-        <link rel="stylesheet"  type="text/css"  href="Resources/CSS/inner_page.css">
-        <link rel="stylesheet" type="text/css" href="Vendors/CSS/normalize.css">
-        <link rel="stylesheet" type="text/css" href="Vendors/CSS/grid.css">
-        <link rel="stylesheet" type="text/css" href="Vendors/CSS/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="Resources/CSS/query.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"  type="text/css"  href="Resources/CSS/style.css">
         <link rel="stylesheet" type="text/css" href="Vendors/CSS/animate.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet" type="text/css">
-        <title>BioBytes (Team)</title> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>BioBytes</title>
         <link rel="icon" type="ico" href="Resources/Img/small_logo.ico"/>
-        <meta charset="UTF-8">   
     </head>
 
+
     <body id="headerjs">    
-        <header>
-
-            <nav>
-                <div class="row">
-                    <a href="index.html"><img src="Resources/Img/final-logo.png" alt="Biobytes logo" class="logo"></a>
-                    <ul class="main-nav">
-                        <li><a href="index.html">Events</a></li>
-                        <li><a href="newsletter.html">Newsletter</a></li>
-                        <li><a href="join.html">Join Us</a></li>
-                    </ul>
-                </div>            
+           <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="padding-left: 0;padding-right: 0; height: 70px;">
+                <a class="navbar-brand" href="index.html" style="margin-left: 40px;"><img src="Resources/Img/final-logo.png" alt="Biobytes White logo" style="height: 35px;">
+                </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 20px; height: 50px;">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse px-5" id="navbarCollapse" style="float: right; margin-right: 30px;">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home
+                          </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="newsletter.html">Newsletter</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="team.html">Our Team</a>
+                    </li>
+                  </ul>
+                </div>
             </nav>
-                    
-        </header>
 
-        <section class="section-team" id="team">
-            <div class="row">
-                <h2>OUR TEAM</h2>
+
+        <section class="section-team" id="team" style="text-align: center;">
+                <h2 style="font-weight: 100;">OUR TEAM</h2>
                 <p>Meet the people behind the smooth functioning of BioBytes.</p>
-            </div>
             <div class="row members">
-                <div class="col span-1-of-6">
-                    <img src="Resources/Img/bhavay.jpg" alt="Bhavay Aggarwal">
-                    <h3>Bhavay Aggarwal</h3>
+                <div class="col-md-4">  
+                        <div class="row">
+                            <div class="card">
+                                <img src="Resources/Img/bhavay.jpg" alt="Bhavay Aggarwal">
+                                <h3 class="name" style="margin:0;">Bhavay Aggarwal</h3>
+                                <h3 class="designation" style="margin:0;">Coordinator</h3>
+                            </div>
+                            <div class="card">                        
+                                <img src="Resources/Img/saad.jpg" alt="Saad Ahmad">
+                                <h3 style="margin:0;">Saad Ahmad</h3>
+                            </div>                            
+                        </div>                  
                 </div>
-                <div class="col span-1-of-6">
-                    <img src="Resources/Img/saad.jpg" alt="Saad Ahmad">
-                    <h3>Saad Ahmad</h3>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="card">                        
+                            <img src="Resources/Img/gavish.jpg" alt="Gavish Gupta">
+                            <h3 style="margin:0;">Gavish Gupta</h3>
+                        </div>
+                    
+                        <div class="card">                        
+                            <img src="Resources/Img/hemant.jpg" alt="Hemant Dhankar">
+                            <h3 style="margin:0;">Hemant Dhankar</h3>
+                        </div>
+                    </div>
                 </div>
-                <div class="col span-1-of-6">
-                    <img src="Resources/Img/gavish.jpg" alt="Gavish Gupta">
-                    <h3>Gavish Gupta</h3>
-                </div>
-                <div class="col span-1-of-6">
-                    <img src="Resources/Img/hemant.jpg" alt="Hemant Dhankar">
-                    <h3>Hemant Dhankar</h3>
-                </div>
-                <div class="col span-1-of-6">
-                    <img src="Resources/Img/shaney.jpg" alt="Shaney Waris">
-                    <h3>Shaney Waris</h3>
-                </div>
-                <div class="col span-1-of-6">
-                    <img src="Resources/Img/samarth.png" alt="Samarth Chauhan">
-                    <h3>Samarth Chauhan</h3>
-                </div>
-            </div>
-
-            <div class="row members">
-                <div class="col span-1-of-6 unknown">
-                    <img src="Resources/Img/unknown_girl.png" alt="Unknown">
-                    <h3>Want to be here?</h3>
-                </div>
-                <div class="col span-1-of-6">
-                    <img src="Resources/Img/prutyay.jpg" alt="Prutyay Gautam">
-                    <h3>Prutyay Gautam</h3>
-                </div>
-                <div class="col span-1-of-6">
-                    <img src="Resources/Img/ria.jpg" alt="Ria Gupta">
-                    <h3>Ria Gupta</h3>
-                </div>
-                <div class="col span-1-of-6">
-                    <img src="Resources/Img/ritvik.jpg" alt="Ritvik Gupta">
-                    <h3>Ritvik Gupta</h3>
-                </div>
-                <div class="col span-1-of-6">
-                    <img src="Resources/Img/juhi.jpg" alt="Juhi Pandey">
-                    <h3>Juhi Pandey</h3>
-                </div>
-                <div class="col span-1-of-6 unknown">  
-                    <img src="Resources/Img/unknown_boy.png" alt="Unknown">
-                    <h3>Want to be here?</h3>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="card">                        
+                            <img src="Resources/Img/shaney.jpg" alt="Shaney Waris">
+                            <h3 style="margin:0;">Shaney Waris</h3>
+                        </div>
+                        <div class="card">                        
+                            <img src="Resources/Img/samarth.png" alt="Samarth Chauhan">
+                            <h3 style="margin:0;">Samarth Chauhan</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+            <br>
             <div class="row members">
-                <div class="col span-1-of-6 unknown">
-                    <img src="Resources/Img/unknown_girl.png" alt="Unknown">
-                    <h3>Want to be here?</h3>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="card">                        
+                            <img src="Resources/Img/prutyay.jpg" alt="Prutyay Gautam">
+                            <h3 style="margin:0;">Prutyay Gautam</h3>
+                        </div>
+                        <div class="card">                        
+                            <img src="Resources/Img/ritvik.jpg" alt="Ritvik Gupta">
+                            <h3 style="margin:0;">Ritvik Gupta</h3>
+                        </div>
+                    </div>
                 </div>
-                <div class="col span-1-of-6 unknown">
-                    <img src="Resources/Img/unknown_boy.png" alt="Unknown">
-                    <h3>Want to be here?</h3>
-
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="card">                        
+                            <img src="Resources/Img/anmol.jpg" alt="Anmol">
+                            <h3 style="margin:0;">Anmol</h3>
+                        </div>
+                        <div class="card">                        
+                            <img src="Resources/Img/shekhar.jpg" alt="Shekhar">
+                            <h3 style="margin:0;">Shekhar</h3>
+                    </div>
                 </div>
-                <div class="col span-1-of-6">
-                    <img src="Resources/Img/anmol.jpg" alt="Anmol">
-                    <h3>Anmol</h3>
-                </div>
-                <div class="col span-1-of-6">
-                    <img src="Resources/Img/shekhar.jpg" alt="Shekhar">
-                    <h3>Shekhar</h3>
-                </div>
-                <div class="col span-1-of-6 unknown">
-                    <img src="Resources/Img/unknown_girl.png" alt="Unknown">
-                    <h3>Want to be here?</h3>                
-                </div>
-                <div class="col span-1-of-6 unknown">  
-                    <img src="Resources/Img/unknown_boy.png" alt="Unknown">
-                    <h3>Want to be here?</h3>
+                <div class="col-md">
                 </div>
 
             </div>
@@ -138,7 +130,7 @@
                 </div>
             </div>
             <div class="row">
-                <p>Made with ❤️ in IIITD</p>
+                <p class="ml-auto mr-auto">Made with ❤️ in IIITD</p>
             </div>
         
         </footer>
@@ -146,6 +138,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="Vendors/JS/jquery.waypoints.min.js"></script>
         <script src="Resources/JS/scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
         
     </body>
 

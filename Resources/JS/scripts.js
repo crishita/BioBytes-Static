@@ -1,24 +1,21 @@
 $(document).ready(function(){
     
 /*For the sticky navbar*/
+
     $('.js--section-events').waypoint(function(direction){
         
         if(direction=="down"){
-            $('nav').addClass('sticky');
+            $('nav').addClass('solidbackground');
         }else{
-            $('nav').removeClass('sticky');
+            $('nav').removeClass('solidbackground');
             
         }
     }, {
-  offset: '100px'
-});
-                                        
+  offset: '60px'
+});                           
 /*For the scrolling*/
-    $('.js--scroll-to-plans').click(function(){
-        $('html, body').animate({scrollTop:$('.js--section-plans').offset().top},1000)
-    })
-    $('.js--scroll-to-start').click(function(){
-        $('html, body').animate({scrollTop:$('.js--section-features').offset().top},1000)
+    $('.js--scroll-to-events').click(function(){
+        $('html, body').animate({scrollTop:$('.js--section-events').offset().top},1000)
     })
     
 /* Fo the navbar */
@@ -78,8 +75,8 @@ $('a[href*="#"]')
     $('.js--wp-3').waypoint(function(directions){
         $('.js--wp-3').addClass('animated fadeInUp');
     },{
-        offset:'20%'
-    })
+        offset:'30%'
+    });
     
 });
 
