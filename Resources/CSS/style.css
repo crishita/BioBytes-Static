@@ -278,7 +278,7 @@ input[type=submit]:active{
 /******************************* SECTION TEAM *******************************************/
 .section-team{
     align-content: center;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)), url(Img/team3.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.6)), url(Img/team3.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
