@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet"  type="text/css"  href="Resources/CSS/style.css">
+        <link rel="stylesheet"  type="text/css"  href="Resources/CSS/query.css">
         <link rel="stylesheet" type="text/css" href="Vendors/CSS/animate.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -22,18 +23,16 @@
                 <div class="collapse navbar-collapse px-5" id="navbarCollapse" style="float: right; margin-right: 30px;">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="index.html">Home
-                            <span class="sr-only">(current)</span>
-                          </a>
+                      <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link js--scroll-to-events" href="#">Events</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="newsletter.html">Newsletter</a>
+                      <a class="nav-link js--scroll-to-newsletter" href="#">Newsletter</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="join.html">On Air!</a>
+                      <a class="nav-link js--scroll-to-onair" href="#">On Air!</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="team.html">Our Team</a>
@@ -46,11 +45,11 @@
         <header>
 
             <div class="main-header-text">
-                <img src="Resources/Img/small_logo.png" alt="Compact Logo" width="300" height="250">
+                <img src="Resources/Img/small_logo.png" alt="Compact Logo" width="400px">
                 <br>
-                <h2>The  Computational Biology Club of IIIT-Delhi</h2>
-                <a class="btn btn-ghost col-md-2" style="width: 300px; margin: 20px;" href="join.html">Join Us!</a>
-                <a class="btn btn-ghost col-md-2" style="width: 300px;" href="#Events">Know More</a> 
+                <h2>The  Computational Biology Club at IIIT-Delhi</h2>
+                <a class="btn btn-ghost col-md-2" style="width: 200px; margin: 20px;" href="team.html">Join Us!</a>
+                <a class="btn btn-ghost col-md-2 js--scroll-to-events" style="width: 200px;" href="#Events">Know More</a> 
 
             </div>
         
@@ -62,39 +61,44 @@
                 </div>
                 <br>
                 <div class="row" style="height: 80%;">
-                    <div class="col-md-4 box js--wp-1" style="height: 40%; margin-bottom:30px;">
-                        <h3 style="margin:0;">Talks</h3>
-                        <img src="Resources/Img/bio-talk-cover.jpg">
-                        <div class="event-description">
-                            <h4></h4>
-                            <p>In our talks we examine trends in technology, how they affect the way we live and do business, and the problems they solve. We discuss methodologies pertaining to the Computational Biology domain.<br><br>On special occasions, we will invite industry veterans to come and talk about the problems they are working on and their experience so far.</p>
+                    <div class="row ml-auto mr-auto " style="width: 70%; height: 100%;">                       
+                        <div class="col-md-6 box js--wp-1" style="height: 40%; margin-bottom:30px;">
+                            <h3 style="margin:0;font-size: 90%;">Talks</h3>
+                            <img src="Resources/Img/bio-talk-cover.jpg">
+                            <div class="event-description">
+                                <h4></h4>
+                                <p>In our talks we examine trends in technology, how they affect the way we live and do business, and the problems they solve. We discuss methodologies pertaining to the Computational Biology domain.<br>On special occasions, we will invite industry veterans to come and talk about the problems they are working on and their experience so far.</p>
+                            </div>
+                        </div>
+        
+        
+                        <div class="col-md-6 box js--wp-3"style="height: 40%;">
+                                <h3 style="margin:0;font-size: 90%;">Hackathons</h3>
+                                <img src="Resources/Img/bio-code-cover.jpg">
+                                <div class="event-description">
+                                    <h4></h4>
+                                    <p>Algorithms to computational biology is like bread to butter. Our Hackathons will focus on solving problems pertaining to Computational BIology and using Data Science techniques, you will come across problems which have real-world implications.<br><br></p>
+                                    <br>
+                                </div>
                         </div>
                     </div>
-    
-    
-                <div class="col-md-4 box js--wp-3"style="height: 40%;">
-                        <h3 style="margin:0;">Hackathons</h3>
-                        <img src="Resources/Img/bio-code-cover.jpg">
-                        <div class="event-description">
-                            <h4></h4>
-                            <p>Algorithms to computational biology is like bread to butter. Our Hackathons will focus on solving problems pertaining to Computational BIology and using Data Science techniques, you will come across problems which have real-world implications.<br></p>
-                        </div>
-                </div>             
+             
                     
                 </div>
             </section>
         
     
-        <section class="section-newsletter" id="newsletter">
+        <section class="section-newsletter js--section-newsletter" id="newsletter">
             <div style="padding: 20px; text-align: center;">
-                    <h2 class="ml-auto mr-auto" style="font-weight: 100;">NEWSLETTER</h2><br>
-                    <h3 style="font-size: 120%;">A Monthly Newsletter !</h3>
+                    <h2 class="ml-auto mr-auto" style="font-weight: 100;">NEWSLETTER</h2>
+                    <br>
+                    <h3 style="font-size: 100%;">A Monthly Newsletter !</h3>
                 <div class="row" style="text-align: center;">
-                    <p class="" style="text-align: center;">Through our monthly newsletter, we would cover interesting work going on in the industry as well as academia,
+                    <p class="" style="text-align: center;font-size: 80%">Through our monthly newsletter, we would cover interesting work going on in the industry as well as academia,
                         provide clear-cut synopsis of interesting research papers and get some insights into this field from alumni.</p>
                 </div>
-                <div class="row about-newsletter" style="width: 100%;">
-                        <a class="btn btn-full ml-auto mr-auto" href="newsletter.html">View latest release here</a>
+                <div class="row about-newsletter" style="width: 100%;margin: 0;">
+                        <a class="btn btn-full ml-auto mr-auto" target="new window" href="newsletter.pdf">View latest release here</a>
                 </div>
                 
             </div>
@@ -102,13 +106,13 @@
         </section>
 
 
-        <section class="section-on_air_with_biobytes" style="padding-bottom: 100px;" id="on_air">
+        <section class="section-on_air_with_biobytes js--section-onair" style="padding-bottom: 10px;" id="on_air">
 
                 <div style="float: right;">
                     <h2>On Air with BioBytes</h2>
-                    <p>In this section we would be interviewing prominent personalities <br>
-                        in this domain. We believe all these would help in improving <br>
-                       our understanding of what all opportunities lie ahead and <br>
+                    <p>In this section we would be interviewing prominent personalities
+                        in this domain. We believe all these would help in improving 
+                       our understanding of what all opportunities lie ahead and
                        elevate the research atmosphere in our college.</p>                    
                 </div>
                 <div class="clearfix"></div>
@@ -125,12 +129,12 @@
         
         <footer>
             <div class="row">
-                <div class="col span-1-of-2">
+                <div class="col-md">
                     <ul class="footer-nav">
                         <li><a href="mailto:biobytes@sc.iiitd.ac.in">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col span-1-of-2">
+                <div class="col-md">
                     <ul class="social-links">
                         <li><a href="https://www.facebook.com/biobytes.iiitd/"><img src="Resources/Img/facebook.png" height="40" width="40"></a></li>
                         <li><a href="https://twitter.com/BytesBio"><img src="Resources/Img/twitter.png" height="40" width="40"></a></li>

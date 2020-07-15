@@ -91,6 +91,7 @@ h4{
     text-align: center;
 }
 /********************************* NAV-BAR ****************************************/
+
 .solidbackground {
     margin-left: auto;
     margin-right: auto;
@@ -102,6 +103,15 @@ h4{
     z-index: 999;
 }
 
+.solidbackground2{
+    background-color: #21b2a6;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    z-index: 999;
+    margin-top: 10px;
+    width: 100%;
+}
 .nobackground {
     background:transparent;
 }
@@ -191,6 +201,8 @@ input[type=submit]:active{
 
 .section-events{
     background-color: white;
+    padding-left: 0;
+    padding-right: 0;
 }
 .section-events h3{
     background-color: #21b2a6;
@@ -242,7 +254,7 @@ input[type=submit]:active{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(Img/on_air_background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 210px;
+    padding-top: 150px;
     padding-bottom: 220px;
 }
 
@@ -266,9 +278,18 @@ input[type=submit]:active{
 /******************************* SECTION TEAM *******************************************/
 .section-team{
     align-content: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)), url(Img/team3.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.hidden{
+    display: none;
 }
 .section-team .card{
-    box-shadow: -4px 10px 10px #ddd8d8;
+    box-shadow: 4px 6px 6px rgba(0,0,0,0.2);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -276,6 +297,7 @@ input[type=submit]:active{
     margin-right: 20px;  
     width: 40%;
     margin-bottom: 20px;
+    background-color: rgba(0,0,0,0.2);
 }
 .section-team .card:hover{
     transform: scale(1.05);
@@ -316,7 +338,7 @@ input[type=submit]:active{
 }
 .section-team h3{
     background-color: #21b2a6;
-    font-size: 1.1vw;
+    font-size: 80%;
     margin-top: -5px;
     height: 100%;
     border-bottom-left-radius: 15px;

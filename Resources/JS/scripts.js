@@ -6,8 +6,31 @@ $(document).ready(function(){
         
         if(direction=="down"){
             $('nav').addClass('solidbackground');
+            $('#navbarCollapse').addClass('solidbackground2');
         }else{
             $('nav').removeClass('solidbackground');
+            $('#navbarCollapse').removeClass('solidbackground2');
+            
+        }
+    }, {
+  offset: '60px'
+});
+    $('.js--section-join').waypoint(function(direction){
+        
+        if(direction=="down"){
+            $('nav').addClass('solidbackground');
+            $('nav').removeClass('navbar-light');
+            $('nav').addClass('navbar-dark');
+            $('.black-logo').addClass('hidden');
+            $('.white-logo').removeClass('hidden');
+            $('#navbarCollapse').addClass('solidbackground2');
+        }else{
+            $('nav').removeClass('solidbackground');
+            $('nav').removeClass('navbar-dark');
+            $('nav').addClass('navbar-light');
+            $('.white-logo').addClass('hidden');
+            $('.black-logo').removeClass('hidden');
+            $('#navbarCollapse').removeClass('solidbackground2');
             
         }
     }, {
@@ -16,7 +39,13 @@ $(document).ready(function(){
 /*For the scrolling*/
     $('.js--scroll-to-events').click(function(){
         $('html, body').animate({scrollTop:$('.js--section-events').offset().top},1000)
-    })
+    });
+    $('.js--scroll-to-onair').click(function(){
+        $('html, body').animate({scrollTop:$('.js--section-onair').offset().top},1000)
+    });
+    $('.js--scroll-to-newsletter').click(function(){
+        $('html, body').animate({scrollTop:$('.js--section-newsletter').offset().top},1000)
+    });
     
 /* Fo the navbar */
     // Select all links with hashes
